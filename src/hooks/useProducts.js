@@ -18,7 +18,7 @@ export default function useProducts() {
 
   useEffect(() => {
     fetchProduct();
-  });
+  }, []);
 
   return { isLoading, products };
 }

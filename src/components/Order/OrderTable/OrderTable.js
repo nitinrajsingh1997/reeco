@@ -10,8 +10,8 @@ import TableRow from "@mui/material/TableRow";
 import { grey } from "@mui/material/colors";
 import avocado from "../../../assets/avocado.jpg";
 import ProductStatus from "../ProductStatus/ProductStatus";
-// import ProductTableSkeleton from "./skeleton/product-table-skeleton";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function ProductTable({ isLoading, products }) {
   return (
@@ -28,7 +28,7 @@ export default function ProductTable({ isLoading, products }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {/* {isLoading && <ProductTableSkeleton />} */}
+          {isLoading && <CircularProgress />}
           {products?.map((row) => (
             <TableRow
               key={row.id}

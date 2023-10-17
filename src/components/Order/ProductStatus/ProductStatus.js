@@ -127,7 +127,6 @@ export default function ProductStatus({ product }) {
         onClose={missingProductDialogClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
-        // TransitionComponent={Transition}
       >
         <DialogTitle id="alert-dialog-title">Missing Product</DialogTitle>
         <IconButton
